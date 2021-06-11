@@ -11,7 +11,7 @@ type Definitions struct {
 }
 type Meanings struct {
 	PartOfSpeech string       `json:"partOfSpeech"`
-	Definitions  *Definitions `json:"definitions"`
+	Definitions  []Definitions `json:"definitions"`
 }
 type DictionarySearch struct {
 	Phonetics []Phonetics `json:"phonetics"`
