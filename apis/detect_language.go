@@ -5,7 +5,7 @@ import (
 )
 
 func DetectLanguage(text string) string {
-	client := detectlanguage.New("c2d939351dfbed486754612b9016b754")
+	client := detectlanguage.New("")
 
 	detections, err := client.Detect(text)
 	if err != nil {
