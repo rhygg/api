@@ -14,6 +14,6 @@ type Meanings struct {
 	Definitions  *Definitions `json:"definitions"`
 }
 type DictionarySearch struct {
-	Phonetics *Phonetics `json:"phonetics"`
-	Meanings  *Meanings  `json:"meanings"`
+	Phonetics []Phonetics `json:"phonetics"`
+	Meanings  []Meanings  `json:"meanings"`
 }
