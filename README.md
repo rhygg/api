@@ -1,6 +1,6 @@
 # Text Analysis API
 
-The this api is fully based on text analysis. It provides endpoints for 
+This api is fully based on text analysis. It provides endpoints for 
 
 1. Sentimental Analysis
 2. A Word Dictionary
