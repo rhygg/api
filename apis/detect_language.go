@@ -2,10 +2,11 @@ package apis
 
 import (
 	"github.com/detectlanguage/detectlanguage-go"
+	"os"
 )
 
 func DetectLanguage(text string) string {
-	client := detectlanguage.New("")
+	client := detectlanguage.New(os.Getenv("KEY"))
 
 	detections, err := client.Detect(text)
 	if err != nil {
