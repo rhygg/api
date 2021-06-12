@@ -15,7 +15,7 @@ func main() {
 
 	app.Get("/", func(ctx *fiber.Ctx) error {
 
-		return ctx.SendString("Hey! This is Rhydderchc's Api!")
+		return ctx.SendString("Hey this is my api! Its based on text analysis, you should go over to https://docs.rhydderchc.rocks and take a look at the documentation and numerous endpoints this text analysis api provides. If you like the api please do star the repository at https://github.com/rhydderchc/api !")
 	})
 	api := app.Group("/api/v1/")
 	api.Get("/sentiment", func(ctx *fiber.Ctx) error {
