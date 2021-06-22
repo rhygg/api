@@ -44,7 +44,6 @@ func main() {
 		lang := apis.DetectLanguage(ctx.Query("text"))
 		return ctx.JSON(fiber.Map{
 			"language": lang,
-			"credits":  "Rhydderchc's API v1",
 			"text":     ctx.Query("text"),
 		})
 	})
@@ -57,7 +56,6 @@ func main() {
 			"translation": resp,
 			"from":        from,
 			"to":          to,
-			"credits":     "Rhydderchc's API v1",
 		})
 	})
 	api.Get("/dictionary", func(ctx *fiber.Ctx) error {
